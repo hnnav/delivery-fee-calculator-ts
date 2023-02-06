@@ -1,24 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react'
+import Form from './components/Form'
+import Price from './components/Price'
+
+// interface Order {
+//   total: any,
+//   distance: any,
+//   items: any, 
+//   time: any
+// }
 
 function App() {
+
+  const [order, setOrder] = useState(null)
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Delivery Fee calculator</h1>
+      <Form setOrder={setOrder}/>
+      
+      {/* Display price if order object not empty */}
+      {order && <Price order={order}/>}
     </div>
   );
 }
