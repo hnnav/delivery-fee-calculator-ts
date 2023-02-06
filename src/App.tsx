@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import Form from './components/Form'
 import Price from './components/Price'
 import { Order } from './interfaces'
@@ -12,7 +12,7 @@ function App() {
       <h1>Delivery Fee calculator</h1>
       <Form setOrder={setOrder}/>
       
-      {/* Display price if order object not empty */}
+      {/* Display price if order exists */}
       {order && <Price order={order}/>}
     </div>
   );

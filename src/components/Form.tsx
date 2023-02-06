@@ -1,10 +1,11 @@
 import React from 'react'
+import { Order } from '../interfaces';
 
-type Props = {
-    setOrder: React.Dispatch<React.SetStateAction<any>>,
+interface Props {
+    setOrder: React.Dispatch<React.SetStateAction<Order | null>>;
 }
 
-export default function Form({setOrder}: Props) {
+export default function Form({ setOrder }: Props) {
 
     // Time format "2023-01-02T10:00"
     let currentDateTime = new Date().toISOString().slice(0, -8);
@@ -12,7 +13,7 @@ export default function Form({setOrder}: Props) {
     function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
         e.preventDefault();
 
-        const newOrder = {
+        const newOrder: Order = {
             total: e.currentTarget.total.value,
             distance: e.currentTarget.distance.value,
             items: e.currentTarget.items.value,
