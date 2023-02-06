@@ -1,10 +1,11 @@
 import { useState, useEffect } from 'react'
+import { Order } from '../interfaces'
 
-interface PriceProps {
-    order: any
+interface Props {
+    order: Order
 }
 
-export default function Price({ order }: PriceProps) {
+export default function Price({ order }: Props) {
 
     const [deliveryTotal, setDeliveryTotal] = useState(0);
     console.log('Delivery total:', deliveryTotal);

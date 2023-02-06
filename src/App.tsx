@@ -1,17 +1,11 @@
 import React, { useState } from 'react'
 import Form from './components/Form'
 import Price from './components/Price'
-
-// interface Order {
-//   total: any,
-//   distance: any,
-//   items: any, 
-//   time: any
-// }
+import { Order } from './interfaces'
 
 function App() {
 
-  const [order, setOrder] = useState(null)
+  const [order, setOrder] = useState<Order | null>(null)
   
   return (
     <div className="App">

@@ -1,10 +1,10 @@
 import React from 'react'
 
-type FormProps = {
+type Props = {
     setOrder: React.Dispatch<React.SetStateAction<any>>,
 }
 
-export default function Form({setOrder}: FormProps) {
+export default function Form({setOrder}: Props) {
 
     // Time format "2023-01-02T10:00"
     let currentDateTime = new Date().toISOString().slice(0, -8);
