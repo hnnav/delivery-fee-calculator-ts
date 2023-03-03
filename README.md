@@ -6,7 +6,7 @@
   npm i
   npm start
 ```
-## E-commerse solution for when a customer is ready with their shopping cart and we’d like to show them how much the delivery will cost. 
+## E-commerce solution for when a customer is ready with their shopping cart and we’d like to show them how much the delivery will cost. 
 
 ### Rules for calculating delivery price
 
