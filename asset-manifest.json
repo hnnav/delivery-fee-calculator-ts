@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/delivery-fee-calculator-ts/static/css/main.1c62445b.css",
+    "main.js": "/delivery-fee-calculator-ts/static/js/main.3ff2de81.js",
+    "index.html": "/delivery-fee-calculator-ts/index.html",
+    "main.1c62445b.css.map": "/delivery-fee-calculator-ts/static/css/main.1c62445b.css.map",
+    "main.3ff2de81.js.map": "/delivery-fee-calculator-ts/static/js/main.3ff2de81.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1c62445b.css",
+    "static/js/main.3ff2de81.js"
+  ]
+}
